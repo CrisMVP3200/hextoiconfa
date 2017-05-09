@@ -2,6 +2,33 @@ body {
   font-family: 'Roboto', sans-serif;  
 }
 
-#hexafa, #faahex {
-    padding: 1em; 
+header {
+    padding: 2em; 
+    background-color: cornflowerblue;
+    color: white; 
 }
+
+main {
+    padding: 3em 2em;
+}
+
+footer {
+    padding: 2em;
+    background-color: cornflowerblue;
+    color: white; 
+}
+
+footer a {
+    color: black; 
+}
+
+#hexToFa, #faToHex {
+    padding: 1em 2em; 
+}
+
+/*
+#faHexSearchText {
+    border-radius: 4px; 
+    width: 100%; 
+}
+*/
