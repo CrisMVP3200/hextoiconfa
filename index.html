@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="CrisMVP3200"/>
+		<meta name="description" content="Plantilla de Bootstrap 3.3.7"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+		
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">  
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css"/> 
+		<title>Hexadecimal a Font Awesome</title>
+		<style>
+		</style>
+	</head>
+		<header>
+			<div class="container text-center">
+				<div class="page-header">
+					<h1>Hexadecimal a Font Awesome</h1>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+                        <p>¿Necesitas el código hexadecimal de un escape Unicode de algún ícono de Font Awesome en específico? ¿O al revés? Esta herramienta te puede servir.</p>
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#hexToFa">HEX a FA</a></li>
+                            <li><a data-toggle="tab" href="#faToHex">FA a HEX</a></li>
+                        </ul>
+                        
+                        <div class="tab-content">
+                            <div id="hexToFa" class="tab-pane fade in active">
+                                <h2>Código hexadecimal a ícono de Font Awesome</h2>
+                                
+                                <hr/>
+                                
+                                <p>Ingresa un valor hexadecimal</p>
+						        <input class="input-lg" id="hexFaSearchText" type="text" size="15" placeholder="Ejs: 0, a, 19, a1"/>
+                                <br/><br/>
+                                <p>Ícono encontrado:</p>
+                                <h1><i id="hexFaInsertIcon"></i> <span id="hexFaIconName"></span></h1>
+                            </div>
+                            
+                            <div id="faToHex" class="tab-pane fade">
+                                <h2>Ícono de Font Awesome a código hexadecimal</h2>
+                                
+                                <hr/>
+                                
+                                <p>Ingresa un nombre de ícono de Font Awesome (sin el prefijo fa-)</p>
+                                <input class="input-lg" id="faHexSearchText" type="text" size="15" placeholder="Ej: flag, twitter"/>
+                                <br/><br/>
+                                <p>Ícono encontrado:</p>
+                                <h1><i id="faHexIcon"></i> <span id="faHexCode"></span></h1>
+                            </div>
+                        </div>
+                        
+                    
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="container text-center">
+                <hr/>
+                <p><strong>Hexadecimal a Font Awesome</strong> por Cristian Cajiao Skarnic, 2017.</p>
+                <p><a href="http://fontawesome.io">Font Awesome</a> creado por <a href="https://twitter.com/davegandy">Dave Gandy</a></p>
+		    </div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+	    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    
+        <script src="scripts/main.js"></script>
+	</body>
+</html>
