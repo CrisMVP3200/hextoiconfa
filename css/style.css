@@ -26,9 +26,6 @@ footer a {
     padding: 1em 2em; 
 }
 
-/*
-#faHexSearchText {
-    border-radius: 4px; 
-    width: 100%; 
+#hexToFaResult, #faToHexResult {
+    display: none; 
 }
-*/

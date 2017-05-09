@@ -288,6 +288,24 @@ var escapeIndex = {
          {"icon":"youtube-play","unicodeEscape":"f16a"}
     ]
 };
+
+document.getElementById("faHexSearchText").addEventListener("input", function(){
+    searchStrByFaHexInput = document.getElementById("faHexSearchText").value; 
+    for(j in escapeIndex.fontAwesomeIcons) {
+        // console.log(escapeIndex.fontAwesomeIcons[j]);
+        if(searchStrByFaHexInput == escapeIndex.fontAwesomeIcons[j].icon) {
+            hexFound = escapeIndex.fontAwesomeIcons[j].unicodeEscape.slice(1,4);
+            faHexIcon.classList = "";
+            faHexIcon.classList.add("fa");
+            faHexIcon.classList.add("fa-fw");
+            faHexIcon.classList.add("fa-" + escapeIndex.fontAwesomeIcons[j].icon);
+            document.getElementById("faHexSearch").innerHTML = searchStrByFaHexInput;
+            document.getElementById("faHexCode").innerHTML = "&#092;uf" + hexFound; 
+            document.getElementById("faToHexResult").style.display = "block"; 
+            
+        }
+    }
+});
             
 document.getElementById("hexFaSearchText").addEventListener("input", function(){    
     searchStrByHexFaInput = document.getElementById("hexFaSearchText").value;
@@ -299,23 +317,11 @@ document.getElementById("hexFaSearchText").addEventListener("input", function(){
             hexFaIcon.classList.add("fa");
             hexFaIcon.classList.add("fa-fw");
             hexFaIcon.classList.add("fa-" + escapeIndex.fontAwesomeIcons[i].icon);
-            document.getElementById("hexFaIconName").innerHTML = iconFound; 
+            document.getElementById("hexFaSearch").innerHTML = searchStrByHexFaInput;
+            document.getElementById("hexFaIconName").innerHTML = iconFound;
+            document.getElementById("hexToFaResult").style.display = "block"; 
         }
     }
 });
             
-document.getElementById("faHexSearchText").addEventListener("input", function(){
-    searchStrByFaHexInput = document.getElementById("faHexSearchText").value; 
-    for(j in escapeIndex.fontAwesomeIcons) {
-        // console.log(escapeIndex.fontAwesomeIcons[j]);
-        if(searchStrByFaHexInput == escapeIndex.fontAwesomeIcons[j].icon) {
-            hexFound = escapeIndex.fontAwesomeIcons[j].unicodeEscape.slice(1,4);
-            faHexIcon.classList = "";
-            faHexIcon.classList.add("fa");
-            faHexIcon.classList.add("fa-fw");
-            faHexIcon.classList.add("fa-" + escapeIndex.fontAwesomeIcons[j].icon);
-            document.getElementById("faHexCode").innerHTML = "&#092;uf" + hexFound; 
-        }
-    }
-});
-            
+      
