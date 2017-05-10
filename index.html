@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/> 
 		
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">  
+         
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         
@@ -19,7 +19,7 @@
 	</head>
 		<header>
 			<div class="container text-center">
-				<h1>Escape Unicode a Font Awesome</h1>
+				<h1>Escape Unicode a Ícono de Font Awesome</h1>
 			</div>
 		</header>
 		<main>
@@ -29,14 +29,16 @@
                         <p>¿Necesitas el escape Unicode de algún ícono de Font Awesome en específico, o al revés? Esta herramienta te puede servir.</p>
                         
                         <p>La lista completa de todos los nombres de íconos de Font Awesome la puedes consultar en su <a href="http://fontawesome.io/icons/">sitio oficial</a>.</p>
+                
+                        <p><strong>Íconos disponibles corresponden a los de la versión 4.7.</p>
                         <br/>
                         <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#faToHex">Unicode a HEX</a></li>
-                            <li><a data-toggle="tab" href="#hexToFa">HEX a Unicode</a></li>
+                            <li class="active"><a data-toggle="tab" href="#faToUnicode">Ícono a Unicode</a></li>
+                            <li><a data-toggle="tab" href="#unicodeToFa">Unicode a Ícono</a></li>
                         </ul>
                         
                         <div class="tab-content">
-                            <div id="faToHex" class="tab-pane fade in active">
+                            <div id="faToUnicode" class="tab-pane fade in active">
                                 <h2>Ícono de Font Awesome a escape Unicode</h2>
                                 
                                 <hr/>
@@ -45,32 +47,32 @@
                                 
                                 <div class="input-group">
                                     <div class="input-group-addon input-lg"><strong>fa-</strong></div>
-                                    <input class="form-control input-lg" id="faHexSearchText" type="text" size="100%" placeholder="Ej: flag, twitter, pie-chart, bar-chart-o"/>
+                                    <input class="form-control input-lg" id="faUnicodeSearchText" type="text" size="100%" placeholder="Ej: flag, twitter, pie-chart, bar-chart-o"/>
                                 </div>    
                                 
                                 <br/><br/>
                                 
-                                <div id="faToHexResult">
+                                <div id="faToUnicodeResult">
                                     <div class="row text-center">
                                         <div class="col-md-4">
                                             <h2>
                                                 <small>Nombre:</small>
                                                 <br/><br/>
-                                                <span id="faHexSearch"></span>
+                                                <span id="faUnicodeSearch"></span>
                                             </h2>
                                         </div>
                                         <div class="col-md-4">
                                             <h2>
                                                 <small>Ícono:</small>
                                                 <br/><br/>
-                                                <i id="faHexIcon"></i>
+                                                <i id="faUnicodeIcon"></i>
                                             </h2>
                                         </div>
                                         <div class="col-md-4">
                                             <h2>
                                                 <small>Unicode:</small>
                                                 <br/><br/>
-                                                <span id="faHexCode"></span>
+                                                <span id="faUnicodeCode"></span>
                                             </h2>
                                         </div>
                                     </div>
@@ -78,7 +80,7 @@
                                 
                                 
                             </div>
-                            <div id="hexToFa" class="tab-pane fade">
+                            <div id="unicodeToFa" class="tab-pane fade">
                                 <h2>Escape Unicode a ícono de Font Awesome</h2>
                                 
                                 <hr/>
@@ -87,32 +89,32 @@
                                 
                                 <div class="input-group">
                                     <div class="input-group-addon input-lg"><strong>&#092;uf</strong></div>
-                                    <input class="form-control input-lg" id="hexFaSearchText" type="text" size="15" placeholder="Ejs: 0, a, 19, a1, 1fe"/>
+                                    <input class="form-control input-lg" id="unicodeFaSearchText" type="text" size="15" placeholder="Ejs: 001, 00a, 12e, 1fe"/>
                                 </div>
                                 
                                 <br/><br/>
                                 
-                                <div id="hexToFaResult">
+                                <div id="unicodeToFaResult">
                                     <div class="row text-center">
                                         <div class="col-md-4">
                                             <h2>
-                                                <small>Valor:</small>
+                                                <small>Unicode:</small>
                                                 <br/><br/>
-                                                <span id="hexFaSearch"></span>
+                                                <span id="unicodeFaSearch"></span>
                                             </h2>
                                         </div>
                                         <div class="col-md-4">
                                             <h2>
                                                 <small>Ícono:</small>
                                                 <br/><br/>
-                                                <i id="hexFaIcon"></i>
+                                                <i id="unicodeFaIcon"></i>
                                             </h2>
                                         </div>
                                         <div class="col-md-4">
                                             <h2>
                                                 <small>Nombre de ícono:</small>
                                                 <br/><br/>
-                                                <span id="hexFaIconName"></span>
+                                                <span id="unicodeFaIconName"></span>
                                             </h2>
                                         </div>
                                     </div>
@@ -130,8 +132,8 @@
 		</main>
 		<footer>
 			<div class="container text-center">
-                <p><strong>Hexadecimal a Font Awesome</strong> por Cristian Cajiao Skarnic, 2017.</p>
-                <p>Iconos disponibles corresponden a Font Awesome 4.7. <a href="http://fontawesome.io">Font Awesome</a> creado por <a href="https://twitter.com/davegandy">Dave Gandy</a>.</p>
+                <p><strong>Hexadecimal a Font Awesome</strong> por Cristian Cajiao S, 2017. <a href="http://fontawesome.io">Font Awesome</a> creado por <a href="https://twitter.com/davegandy">Dave Gandy</a>.</p>
+                <p>Contacto: cristiancajiaos[at]gmail.com</p>
 		    </div>
 		</footer>
 

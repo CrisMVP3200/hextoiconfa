@@ -12,6 +12,20 @@ main {
     padding: 3em 2em;
 }
 
+.nav {
+    font-weight: bold; 
+    font-size: 1.25em; 
+}
+
+
+#hexToFa, #faToHex {
+    padding: 1em 2em; 
+}
+
+#hexToFaResult, #faToHexResult {
+    display: none; 
+}
+
 footer {
     padding: 2em;
     background-color: cornflowerblue;
@@ -20,12 +34,4 @@ footer {
 
 footer a {
     color: black; 
-}
-
-#hexToFa, #faToHex {
-    padding: 1em 2em; 
-}
-
-#hexToFaResult, #faToHexResult {
-    display: none; 
 }
