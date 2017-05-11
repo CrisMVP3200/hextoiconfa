@@ -411,7 +411,8 @@ var escapeIndex = {
          {"icon":"toggle-down","unicodeEscape":"f150"},
          {"icon":"toggle-left","unicodeEscape":"f191"},
          {"icon":"toggle-off","unicodeEscape":"f204"},
-         {"icon":"toggle-on","unicodeEscape":"205"},
+         {"icon":"toggle-on","unicodeEscape":"f205"},
+        
          {"icon":"toggle-right","unicodeEscape":"f152"},
          {"icon":"toggle-up","unicodeEscape":"f151"},
          {"icon":"trademark","unicodeEscape":"f25c"},
